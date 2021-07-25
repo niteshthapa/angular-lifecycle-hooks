@@ -1,0 +1,75 @@
+<a routerLink="/child2" routerLinkActive="active">Navigate to check  ngOnDestroy</a>
+<table class="table table-bordered border-primary">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Hook method </th>
+        <th scope="col">Last</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>ngOnChanges()
+        </td>
+        <td>Respond when Angular sets or resets data-bound input properties. The method receives a SimpleChanges object of
+          current
+          and previous property values. <strong> if your component has no inputs or you use it without providing any
+            inputs, the framework will not call
+            ngOnChanges().</strong>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>ngOnInit()
+        </td>
+        <td>Initialize the directive or component after Angular first displays the data-bound properties and sets the
+          directive or component's input properties.</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>ngDoCheck()
+        </td>
+        <td>Detect and act upon changes that Angular can't or won't detect on its own.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>ngAfterContentInit()
+        </td>
+        <td>Called once after the first ngDoCheck(
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>ngAfterContentChecked()
+        </td>
+        <td>Respond after Angular checks the content projected into the directive or component.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>ngAfterViewInit()
+        </td>
+        <td>Respond after Angular initializes the component's views and child views, or the view that contains the
+          directive.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>ngAfterViewChecked()
+        </td>
+        <td>Respond after Angular checks the component's views and child views, or the view that contains the directive.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>ngOnDestroy()
+        </td>
+        <td>Cleanup just before Angular destroys the directive or component. Unsubscribe Observables and detach event
+          handlers to avoid memory leaks.
+        </td>
+      </tr>
+    </tbody>
+  </table>
